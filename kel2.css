@@ -181,7 +181,8 @@ footer .links a {
     padding: 1rem 1rem;
 }
 
-footer .links a:hover {
+footer .links a:hover,
+.navbar .navbar-nav a:hover {
     color: black;
 }
 
