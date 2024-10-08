@@ -8,6 +8,35 @@ body {
     padding : 2rem;
 } */
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;  
+    background-color: brown;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding-right: 20rem;
+    
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+}
+
+.navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
 .home {
     min-height: 100vh;
     display: flex;
@@ -39,8 +68,9 @@ body {
 
 /* tmbh baris border table */
 table, th, td {
-    border: 1px groove black;
-    border-radius: 10px;
+    border-style: solid;
+    border-color: aqua;
+    /* border-radius: 10px; */
     text-align: center;
     width: 40%;
     height: 2em;
@@ -109,4 +139,24 @@ table, th, td {
     text-align: justify;
     padding: 1rem;
 
+}
+
+form  div {
+    margin: 10px;
+}
+
+label {
+    display: block;
+}
+
+input:invalid,
+input:required:invalid {
+    border: none;
+    outline: 2px solid red;
+}
+
+input:valid
+input:required {
+    border: 1px solid black;
+    outline: inherit;
 }

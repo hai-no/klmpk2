@@ -5,13 +5,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RasTravel</title>
+    <title>Go-Rent</title>
 </head>
 <body>
 
+  <nav class="navbar">
+    <a href="#" class="navbar-logo"> Go-<span>Rent</span></a>
+    <div class="navbar-nav">
+      <a href="">Home</a>
+      <a href="">Pemesanan</a>
+      <a href="">Kendaraan</a>
+      <a href="">Layanan</a>
+    </div>
+  </nav>
+  
     <section class="home">
         <main class="homi">
-            <h1> RasTravel</h1>
+            <h1> Go-Rent</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro dolores facilis consequatur provident nam odio voluptates officiis amet facere, odit quaerat hic, explicabo dol
             </p>
         </main>
@@ -20,6 +30,7 @@
     <section class="materi">
       <div class="tabel1">
         <table>
+          <h2>Daftar</h2>
           <!-- tr table row sebaris -->
             <tr>
               <!-- th itu table head untuk header -->
@@ -125,22 +136,29 @@
 
     <section class="form">
       <h2> Pendaftaran</h2>
-      <form action="" method="post">
-        <div>
-          <label for="nama">Masukan nama:</label>
-          <input type="text" name="nama" id="nama">
-        </div>
-        <div>
-          <label for="nomot">Nomor telepon</label>
-          <input type="number" name="nomor" id="nomor">
-        </div>
-        <div>
-          <label for="email">Masukan email</label>
-          <input type="text" name="email" id="email">
-        </div>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
+      <div class="row">
+
+        <form action="" method="post">
+          <div class="input">
+            <label for="nama">Masukan nama:</label>
+            <input type="text" name="nama" id="nama" autofocus requ>
+          </div>
+          <div class="input">
+            <label for="notlp">Nomor telepon</label>
+            <input type="tel" name="notlp" id="notlp">
+          </div>
+          <div class="input">
+            <label for="email">Masukan email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="input">
+            <label for="tanggal">Tanggal Pemesanan</label>
+            <input type="date" name="tanggal" id="tanggal ">
+          </div>
+          <div class="input">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+      </div>
 
       </form>
 
