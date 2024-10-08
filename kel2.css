@@ -2,12 +2,6 @@ body {
     font-family: sans-serif
 }   
 
-/* h1 {
-    justify-content: center;
-    display: flex;
-    padding : 2rem;
-} */
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -19,7 +13,7 @@ body {
     left: 0;
     right: 0;
     z-index: 9999;
-    padding-right: 20rem;
+    padding-right: 20\rem;
     
 }
 
@@ -159,4 +153,29 @@ input:valid
 input:required {
     border: 1px solid black;
     outline: inherit;
+}
+
+footer {
+    background-color: brown;
+    text-align: center;
+    padding: 0.8rem 0 1rem;
+    margin-top: 10rem;
+}
+
+footer .links {
+    /* margin-bottom: 1rem; */
+    margin-top: 1rem;
+}
+
+footer .links a {
+    color: white;
+    padding: 1rem 1rem;
+}
+
+footer .credit {
+    font-size: 1rem;
+}
+
+footer .credit a{
+    color: white;
 }
