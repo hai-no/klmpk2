@@ -194,8 +194,38 @@ footer .credit a{
     color: white;
 }
 
+
+.galeri {
+    padding: 40px;
+}
+
+.isigaleri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.images {
+    flex-basis: calc(25% - 20px);
+    /* box-shadow: 0 4px 8px rgba(red, green, blue, alpha); */
+}
+
+.images img{
+    /* height: 350px; */
+    /* width: 650spx; */
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+
 @media (max-width: 450px) {
     html {
       font-size: 55%;
     }
   }
+
+
+
