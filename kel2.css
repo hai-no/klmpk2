@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    border: none;
+    /* border: none; */
     text-decoration: none;
   }
 
@@ -22,7 +22,6 @@ body {
     left: 0;
     right: 0;
     z-index: 9999;
-    padding-right: 20\rem;
     
 }
 
@@ -208,7 +207,15 @@ footer .credit a{
 
 .images {
     flex-basis: calc(25% - 20px);
+    padding: 10px;
     /* box-shadow: 0 4px 8px rgba(red, green, blue, alpha); */
+}
+
+.images p {
+    text-align: justify;
+    padding-top: 10px;
+
+
 }
 
 .images img{
@@ -219,6 +226,23 @@ footer .credit a{
     display: block;
 
 }
+
+.isiytb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ytb {
+    padding: 10px;
+}
+
+.ytb iframe {
+    width: 700px;
+    height: 500px;
+    display: block;
+}
+
 
 
 @media (max-width: 450px) {
