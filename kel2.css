@@ -67,6 +67,11 @@ body {
     color: aliceblue;
 }
 
+.table {
+    justify-content: center;
+    justify-items: center;
+    padding-top: 2rem;
+}
 
 /* tmbh baris border table */
 table, th, td {
@@ -83,6 +88,10 @@ table, th, td {
     padding: 5rem;
 }
 
+.list {
+    padding-top: 2rem;
+}
+
 .list h2 {
     text-align: center;
 }
@@ -90,6 +99,7 @@ table, th, td {
 .list ul,ol, dl{
     padding-left: 34rem;
 }
+
 
 .homi img {
     width: 100%;
