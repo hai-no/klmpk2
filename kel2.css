@@ -73,7 +73,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* supaya fleksibel u/ layar kecil */
 }
 
 .table {
@@ -87,9 +87,9 @@ body {
 }
 
 table {
-    border-collapse: collapse;
+    border-collapse: collapse; /* menghilangkan double border */
     width: 100%;
-    max-width: 600px;
+    max-width: 600px;/* batasi lebar maksimum */
 }
 
 th, td {
