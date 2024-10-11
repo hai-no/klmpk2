@@ -68,26 +68,59 @@ body {
     font-weight: 100;
     color: aliceblue;
 }
-
+/* 
 .table {
     justify-content: center;
     justify-items: center;
     padding-top: 2rem;
-}
+} */
 
 /* tmbh baris border table */
-table, th, td {
+/* table, th, td {
     border-style: solid;
     border-color: aqua;
     /* border-radius: 10px; */
-    text-align: center;
+    /* text-align: center;
     width: 40%;
     height: 2em;
-}
+} */ */
 
-.tabel1,
+/* .tabel1,
 .tabel2 {
     padding: 5rem;
+} */
+
+.isi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.table {
+    margin: 20px;
+}
+
+.table h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+th, td {
+    border: 1px solid blue;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: aqua;
 }
 
 .list {
