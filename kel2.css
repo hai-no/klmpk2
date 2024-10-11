@@ -9,8 +9,8 @@
 
 body {
     font-size: 16px;
-    font-family: sans-serif
-}   
+    font-family: sans-serif;
+}
 
 .navbar {
     display: flex;
@@ -68,28 +68,6 @@ body {
     font-weight: 100;
     color: aliceblue;
 }
-/* 
-.table {
-    justify-content: center;
-    justify-items: center;
-    padding-top: 2rem;
-} */
-
-/* tmbh baris border table */
-/* table, th, td {
-    border-style: solid;
-    border-color: aqua;
-    /* border-radius: 10px; */
-    /* text-align: center;
-    width: 40%;
-    height: 2em;
-} */ */
-
-/* .tabel1,
-.tabel2 {
-    padding: 5rem;
-} */
-
 .isi {
     display: flex;
     justify-content: center;
@@ -105,6 +83,7 @@ body {
 .table h2 {
     text-align: center;
     font-size: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 table {
