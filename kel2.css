@@ -16,7 +16,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 7%;  
+    padding: 1.4rem 5%;  
+    /* padding: 10px 20px; */
     background-color: brown;
     position: fixed;
     top: 0;
@@ -33,12 +34,18 @@ body {
     font-style: italic;
 }
 
-.navbar .navbar-nav a {
+.navbar-nav {
+    display: flex;
+    flex: 1; /* isi ruang kosong yang sisa */
+    justify-content: center;
+}
+
+.navbar a {
     color: white;
-    display: inline-block;
-    font-size: 1.2rem;
-    margin: 0 1rem;
-    padding: 10px 20px;
+    /* display: inline-block; */
+    font-size: 18px;
+    margin: 0 15px;
+    /* padding: 10px ; */
 }
 
 .home {
@@ -102,18 +109,23 @@ th {
     background-color: aqua;
 }
 
-.list {
-    padding-top: 2rem;
+.list-item {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.list-item ul {
+    padding: 0;
+    margin: 0px 10px;
+    width: 10%;
 }
 
 .list h2 {
     text-align: center;
 }
-
-.list ul,ol, dl{
-    padding-left: 34rem;
-}
-
 
 .homi img {
     width: 100%;
@@ -270,31 +282,35 @@ footer .credit a{
     display: block;
 }
 
-@media (max-width: 758px){
+@media (max-width: 768px){
 
     html {
         font-size: 60%;
     }
 
-    .navbar .navbar-nav {
-        position: absolute;
-        top: 3%;
-        right: 45%;
-        width: 30rem;
-        height: 100vh;
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
     }
-    
-    .navbar .navbar-nav a {
+
+    .navbar-nav {
+        justify-content: flex-start;  /* untk layar kecil kembali ke kiri menunya */
+    }
+
+    .navbar-nav a {
         /* display: block; */
         margin: 1.4rem;
-        padding: 0.5rem;
-        font-size: 1.4rem;
+        font-size: 14px;
       }
     
-    .navbar .navbar-logo {
-        display: block;
-        margin-bottom: 10px;
+    .navbar-logo {
+        /* display: block;
+        margin-bottom: 10px; */
+        font-size: 20px;
     }
+
+
 
 
 }
@@ -302,6 +318,19 @@ footer .credit a{
 @media (max-width: 450px) {
     html {
       font-size: 55%;
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar-logo {
+        font-size: 18px;
+    }
+
+    .navbar-nav a {
+        font-size: 14px;
+        margin: 3px 0;
     }
   }
 
