@@ -143,24 +143,24 @@ th {
 
 .isigaleri {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* baris kebawah di layar kecil */
     justify-content: center;
-    gap: 20px;
+    gap: 20px; /* jarak antar gambar */
 }
 
 .images {
     /* background-color: gray; */
     padding: 10px;
     border-radius: 8px;
-    width: 250px;
+    width: 250px; /* lebar tiap gambar */
     text-align: center;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.1);
 }
 
 .images img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width: 100%; /* gambar penuh di div */
+    height: 200px; /* ukuran gambar sama */
+    object-fit: cover; /* jaga rasio gambar tetap sama */
 }
 
 .images p {
@@ -275,7 +275,13 @@ footer .credit a{
         margin-bottom: 10px;
     }
 
+    .images {
+        width: 100%;
+    }
 
+    .images img {
+        height: 200px;
+    }
 
 
 }
@@ -295,7 +301,7 @@ footer .credit a{
 
     .navbar-nav a {
         font-size: 14px;
-        margin: 3px 5px;
+        margin: 3px 5px; /* jarak gap */
     }
   }
 
