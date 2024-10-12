@@ -188,13 +188,58 @@ th {
     padding: 10px;
 }
 
-form  div {
-    margin: 10px;
+.ytb {
+    flex: 1 1 300px;
+    max-width: 400px;
+    padding: 10px;
+    overflow: hidden;
 }
 
-label {
-    display: block;
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
+.form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.row {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+} 
+
+.row .input label {
+
+}
+
+
+.input {
+     display: flex;
+     flex-direction: column;
+}
+
+.input input{
+    padding: 10px;
+    width: 100%;
+}
+
+/* label {
+    display: block;
+} */
 
 input:invalid,
 input:required:invalid {
@@ -241,21 +286,6 @@ footer .credit a{
     font-weight: 700;
 }
 
-.isiytb {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.ytb {
-    padding: 10px;
-}
-
-.ytb iframe {
-    width: 700px;
-    height: 500px;
-    display: block;
-}
 
 @media (max-width: 768px){
 
@@ -300,6 +330,14 @@ footer .credit a{
 
     .images img {
         height: 200px;
+    }
+
+    .isiytb {
+        flex-direction: column;
+    }
+
+    .ytb {
+        width: 100%;
     }
 
 
