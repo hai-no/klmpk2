@@ -169,6 +169,25 @@ th {
     text-align: center;
 }
 
+.video-galeri {
+    padding: 20px;
+}
+
+.isivideo,
+.isiytb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.isivideo video,
+.isiytb .ytb iframe {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
 form  div {
     margin: 10px;
 }
