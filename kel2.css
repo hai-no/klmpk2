@@ -110,17 +110,17 @@ th {
 }
 
 .list-item {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
+    display: flex; /* elemen sejajar horizontal */
+    justify-content: space-evenly; /* memberi jarak yg sama antar elemen */
+    flex-wrap: nowrap;/* cegah elemen turun ke baris bawah */
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
 .list-item ul {
-    padding: 0;
-    margin: 0px 10px;
-    width: 10%;
+    padding: 10px;
+    margin: 0px 10px;  /* jarak antar col */
+    width: 10%;     /* lebar setiap col */
 }
 
 .list h2 {
@@ -308,6 +308,15 @@ footer .credit a{
         /* display: block;
         margin-bottom: 10px; */
         font-size: 20px;
+    }
+
+    .list-item {
+        flex-direction: column; /* berubah sejajar vertikal */
+    }
+
+    .list-item ul {
+        width: 100%;/* lebar penuh pada setiap list */
+        margin-bottom: 10px;
     }
 
 
