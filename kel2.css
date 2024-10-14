@@ -8,7 +8,6 @@
   }
 
 body {
-    font-size: 16px;
     font-family: sans-serif;
 }
 
@@ -43,7 +42,7 @@ body {
 .navbar a {
     color: white;
     /* display: inline-block; */
-    font-size: 18px;
+    font-size: 22px;
     margin: 0 15px;
     /* padding: 10px ; */
 }
@@ -71,7 +70,7 @@ body {
 }
 
 .home .homi p {
-    font-size: 2rem;
+    font-size: 25px;
     padding: 0 10rem;
     margin-top: 0.5rem;
     line-height: 1.2;
@@ -81,6 +80,50 @@ body {
     text-align: justify;
     justify-content: center;
 }
+
+.about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about h2,
+.table h2,
+.hubungi h2,
+.isiform h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    width: 40rem;
+    border-radius: 10px;
+}
+
+.isiabout {
+    text-align: left;
+    max-width: 600px;
+}
+
+.isiabout h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.isiabout p {
+    font-size: 16px;
+}
+
 .isi {
     display: flex;
     justify-content: center;
@@ -93,17 +136,12 @@ body {
     margin: 20px;
 }
 
-.table h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
-}
 
 table {
     border-collapse: collapse; /* menghilangkan double border */
-    width: 100%;
-    max-width: 900px;/* batasi lebar maksimum */
-    font-size: 40px;
+    /* width: 100%; */
+    width: 800px;/* batasi lebar maksimum */
+    font-size: 30px;
 }
 
 th, td {
@@ -122,6 +160,7 @@ th {
     flex-wrap: nowrap;/* cegah elemen turun ke baris bawah */
     align-items: flex-start;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .list-item ul {
@@ -132,6 +171,7 @@ th {
 
 .list h2 {
     text-align: center;
+    font-size: 2rem;
 }
 
 .homi img {
@@ -146,6 +186,8 @@ th {
 
 .galeri h2 {
     text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
 }
 
 .isigaleri {
@@ -205,25 +247,31 @@ th {
 
 .audio 
 
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.form h2 {
-    margin-bottom: 20px;
+.hubungi {
     text-align: center;
 }
 
-.row {
-    padding: 20px;
-    max-width: 400px;
-    width: 100%;
+.isihubungi {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 20px;
+}
+
+.form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+
+.isiform  {
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+
+}
+
 
 .input {
     display: flex;
@@ -232,19 +280,22 @@ th {
 
 } 
 
-.input {
-     display: flex;
-     flex-direction: column;
+.input label {
+    margin-bottom: 5px;
+
 }
 
-.input input{
+.input input {
     padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
     width: 100%;
-}
+} 
 
-/* label {
+
+label {
     display: block;
-} */
+}
 
 input:invalid,
 input:required:invalid {
@@ -274,7 +325,7 @@ footer .links {
 
 footer .links a {
     color: white;
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
 }
 
 footer .links a:hover,
@@ -283,7 +334,7 @@ footer .links a:hover,
 }
 
 footer .credit {
-    font-size: 0.7rem;
+    font-size: 14px;
 }
 
 footer .credit a{
@@ -295,7 +346,7 @@ footer .credit a{
 @media (max-width: 768px){
 
     html {
-        font-size: 60%;
+        font-size: 80%;
     }
 
     .navbar {
@@ -320,8 +371,23 @@ footer .credit a{
         font-size: 20px;
     }
 
+    .home .homi p {
+        font-size: 12px;
+    }
+
+    table, th, td {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .layanan .list h2 {
+        font-size: 25px;
+    }
+
     .list-item {
         flex-direction: column; /* berubah sejajar vertikal */
+        font-size: 16px;
     }
 
     .list-item ul {
