@@ -88,6 +88,8 @@ body {
 
 .about h2,
 .table h2,
+.list h2,
+.galeri h2,
 .hubungi h2,
 .isiform h2 {
     font-size: 2rem;
@@ -111,8 +113,8 @@ body {
 }
 
 .isiabout {
-    text-align: left;
     max-width: 600px;
+    text-align: justify;
 }
 
 .isiabout h3 {
@@ -169,10 +171,6 @@ th {
     width: 10%;     /* lebar setiap col */
 }
 
-.list h2 {
-    text-align: center;
-    font-size: 2rem;
-}
 
 .homi img {
     width: 100%;
@@ -184,11 +182,6 @@ th {
     text-align: center;
 }
 
-.galeri h2 {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 2rem;
-}
 
 .isigaleri {
     display: flex;
@@ -316,7 +309,6 @@ footer {
     margin-top: 3rem;
 }
 
-footer
 
 footer .links {
     /* margin-bottom: 1rem; */
@@ -333,8 +325,8 @@ footer .links a:hover,
     color: black;
 }
 
-footer .credit {
-    font-size: 14px;
+footer .credit .links a {
+    font-size: 18px;
 }
 
 footer .credit a{
@@ -342,11 +334,14 @@ footer .credit a{
     font-weight: 700;
 }
 
+.credit p {
+    padding-top: 10px;
+}
 
 @media (max-width: 768px){
 
     html {
-        font-size: 80%;
+        font-size: 65%;
     }
 
     .navbar {
@@ -409,6 +404,15 @@ footer .credit a{
 
     .ytb {
         width: 100%;
+    }
+
+    .isihubungi p,
+    .isihubungi ul {
+        font-size: 12px;
+    }
+
+    .credit p {
+        font-size: 10px;
     }
 
 
