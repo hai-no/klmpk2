@@ -178,7 +178,8 @@ th {
 }
 
 .isivideo,
-.isiytb {
+.isiytb,
+.isiaudio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -198,6 +199,8 @@ th {
     padding: 10px;
     overflow: hidden;
 }
+
+.audio 
 
 .form {
     display: flex;
