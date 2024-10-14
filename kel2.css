@@ -62,18 +62,22 @@ body {
 .homi h1 {
     padding: 1.4rem  ;
     max-width: 80rem;
-    font-size: 2rem;
+    font-size: 4rem;
     color: #edeaea;
     line-height: 1.2;
     margin-top: 0rem;
+    text-align: center;
 }
 
 .home .homi p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 0.5rem;
     line-height: 1.2;
     font-weight: 100;
     color: aliceblue;
+    padding-bottom: 40rem;
+    text-align: justify;
+    text-align: center;
 }
 .isi {
     display: flex;
@@ -100,13 +104,13 @@ table {
 }
 
 th, td {
-    border: 1px solid blue;
+    border: 1px solid brown;
     padding: 8px;
     text-align: center;
 }
 
 th {
-    background-color: aqua;
+    background-color: brown;
 }
 
 .list-item {
