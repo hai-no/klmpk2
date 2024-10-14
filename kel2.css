@@ -51,6 +51,7 @@ body {
 .home {
     min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-image: url(images/mobil.png);
     background-repeat: no-repeat;
@@ -60,7 +61,7 @@ body {
 }
 
 .homi h1 {
-    padding: 1.4rem  ;
+    padding: 0 4rem; 
     max-width: 80rem;
     font-size: 4rem;
     color: #edeaea;
@@ -71,13 +72,14 @@ body {
 
 .home .homi p {
     font-size: 2rem;
+    padding: 0 10rem;
     margin-top: 0.5rem;
     line-height: 1.2;
     font-weight: 100;
     color: aliceblue;
     padding-bottom: 40rem;
     text-align: justify;
-    text-align: center;
+    justify-content: center;
 }
 .isi {
     display: flex;
@@ -100,11 +102,12 @@ body {
 table {
     border-collapse: collapse; /* menghilangkan double border */
     width: 100%;
-    max-width: 600px;/* batasi lebar maksimum */
+    max-width: 900px;/* batasi lebar maksimum */
+    font-size: 40px;
 }
 
 th, td {
-    border: 1px solid brown;
+    border: 1px solid rgb(59, 64, 199);
     padding: 8px;
     text-align: center;
 }
@@ -228,11 +231,6 @@ th {
     margin-bottom: 15px;
 
 } 
-
-.row .input label {
-
-}
-
 
 .input {
      display: flex;
